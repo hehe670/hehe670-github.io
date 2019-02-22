@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+  
+  <meta name="description" content="##git的使用 - 版本控制
+###1.代码托管平台github.comgitee.comcoding.net
+###2.git命令基本指令git init   ——  新建git仓库git add 文件/文件夹  ——  将文件添加到缓存区中git add  -A    ——  将工作区中的所有">
+  
+
+  
+  
+  
+  
+  
+  
+  <title>git的使用 - 版本控制 | 行者要习，习者要行</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="##git的使用 - 版本控制 ###1.代码托管平台github.comgitee.comcoding.net ###2.git命令基本指令git init   ——  新建git仓库git add 文件/文件夹  ——  将文件添加到缓存区中git add  -A    ——  将工作区中的所有内容都提交 git status ———    查看git状态git commit -m  ‘提交信">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git的使用 - 版本控制">
+<meta property="og:url" content="http://yoursite.com/2019/02/22/git的使用 - 版本控制/index.html">
+<meta property="og:site_name" content="行者要习，习者要行">
+<meta property="og:description" content="##git的使用 - 版本控制 ###1.代码托管平台github.comgitee.comcoding.net ###2.git命令基本指令git init   ——  新建git仓库git add 文件/文件夹  ——  将文件添加到缓存区中git add  -A    ——  将工作区中的所有内容都提交 git status ———    查看git状态git commit -m  ‘提交信">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-22T11:16:16.358Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="git的使用 - 版本控制">
+<meta name="twitter:description" content="##git的使用 - 版本控制 ###1.代码托管平台github.comgitee.comcoding.net ###2.git命令基本指令git init   ——  新建git仓库git add 文件/文件夹  ——  将文件添加到缓存区中git add  -A    ——  将工作区中的所有内容都提交 git status ———    查看git状态git commit -m  ‘提交信">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+  <!-- baidu webmaster push -->
+  <script src="//push.zhanzhang.baidu.com/push.js"></script>
+</head></html>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="行者要习，习者要行" rel="home">行者要习，习者要行</a>
+      </h1>
+      
+        <h2 class="site-description hitokoto"></h2>
+        <script type="text/javascript" src="https://v1.hitokoto.cn/?encode=js"></script>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">菜单</button>
+            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">Home</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">Archives</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-git的使用 - 版本控制" class="post-git的使用 - 版本控制 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
+  
+    <h1 class="entry-title article-title">
+      git的使用 - 版本控制
+    </h1>
+  
+
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://yoursite.com/2019/02/22/git的使用 - 版本控制/" data-id="cjsfyqbi10004uwveyh7je4os" class="leave-reply bdsharebuttonbox" data-cmd="more">分享</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <p>##git的使用 - 版本控制</p>
+<p>###1.代码托管平台<br>github.com<br>gitee.com<br>coding.net</p>
+<p>###2.git命令<br>基本指令<br>git init   ——  新建git仓库<br>git add 文件/文件夹  ——  将文件添加到缓存区中<br>git add  -A    ——  将工作区中的所有内容都提交</p>
+<p>git status ———    查看git状态<br>git commit -m  ‘提交信息’  ——  将缓存区中的内容全部提交到git本地仓库中<br>git commit -a -m ‘清空’</p>
+<p>git log   ——-    查看提交日志</p>
+<p>git reset  - - hard   HEAD——   让工作目录中的内容和仓库中的内容保持一致<br>git reset  –hard HEAD^   ——  回到上一个版本<br>git  reset  - - hard 版本号  ——  回到指定的版本</p>
+<p>git checkout    文件名   ——  从暂存区中恢复工作目录中的内容(让工作区中的指定文件，回到上次提交的时候的状态), 不能通过-A来恢复所有文件</p>
+<p>1.没有本地仓库只有远程仓库(刚到公司，手头没有公司项目需要从公司的gitlab或者其他远程仓库上克隆到本地)</p>
+<p>先cd到你打算方法项目的目录下<br>git clone <url>  - 将服务器上的项目(仓库)克隆</url></p>
+<p>2.本地有项目，并且已经更新过版本。需要关联远程仓库</p>
+<p>先在代码托管平台创建空的远程仓库(不要自动创建README)</p>
+<p>cd到本地仓库，执行： git remote add origin 仓库地址</p>
+<p><code>注意: 让本地已有的仓库和远程仓库关联的时候，远程仓库创建的时候不能添加README文件(创建空的仓库)</code><br>git remote add origin 地址              关联远程仓库(只需要关联一次)<br>git push [-u] origin master  - 提交  (-u在第一次提交分之的时候才用)</p>
+<p>如果创建远程仓库的时候仓库中有默认文件<br>git pull   —rebase origin master</p>
+<p>###1分之管理：</p>
+<p>a.创建仓库会默认给我们创建一个master分之,这个分之一般作为提交和发布分之<br>b.开发一般会自己创建一个develop分之，用来开发和测试<br>c.多人协作的时候还可能根据不同的人或者(不同的功能)创建不同的分之，用来独立开发</p>
+<p>常见分之： master, develop, 功能/人员分之</p>
+<p>git branch [-a]           - 查看分之<br>git branch 分之名        - 创建分之<br>git checkout   分支名        -   切换分之<br>git checkout -b 分之名            - 切换并创建新的分之</p>
+<p>git diff    分之1  分之2        - 查看两个分之之间的差异</p>
+<p>git merge 分之名                - 让当前分之和指定分之进行合并  (让当前分之拥有指定分之的内容)</p>
+<p><code>注意: 切换分之、push、pull，这些操作前要保证工作区是clean</code></p>
+<p>练习：创建一个开发分之(develop),然后在创建两个开发者分之zhangsan和lisi;<br>         然后在zhangsan的分之上添加一个文件夹(aaa)，文件夹中有一个文件(文件不能为空)<br>         在lisi的分之上添加一个图片<br>         最后将zhangsan和lisi分之都合并到develop中；然后再将develop合并到master上<br>怎么避免冲突：  不要发生多个分之对同一个文件在同一个版本下进行修改(和同伴确认和商量)</p>
+<p>ssh地址的使用<br>配置全局的用户信息(windows)<br>git  global  config user.name  “yuting”<br>git  global  config user.email    “<a href="mailto:yuting@163.com" target="_blank" rel="noopener">yuting@163.com</a>”</p>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2019/02/22/git的使用 - 版本控制/">
+    <time datetime="2019-02-22T09:42:53.650Z" class="entry-date">
+        2019-02-22
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+        <span class="nav-previous"><a href="/2019/02/22/Hexo博客搭建/" rel="prev"><span class="meta-nav">←</span> Hexo博客搭建</a></span>
+    
+    
+        <span class="nav-next"><a href="/2019/02/22/vim编辑器之神/" rel="next">vim编辑器之神 <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value name="s" id="s">
+        <input type="submit" id="searchsubmit" value="搜索">
+    </div>
+</form></aside>
+  
+    
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/2019/02/22/MySQL配置/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/22/Linux指令/">Linux指令系统</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/22/Hexo博客搭建/">Hexo博客搭建</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/22/git的使用 - 版本控制/">git的使用 - 版本控制</a>
+          </li>
+        
+          <li>
+            <a href="/2019/02/22/vim编辑器之神/">vim编辑器之神</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  
+    
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2019 行者m
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='/js/share.js'];</script>
+
+<script src="/js/jquery-3.3.1.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>
