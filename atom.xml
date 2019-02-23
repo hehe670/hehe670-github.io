@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-23T04:30:43.158Z</updated>
+  <updated>2019-02-23T04:31:22.199Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title></title>
+    <link href="http://yoursite.com/2019/02/22/MySQL%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2019/02/22/MySQL配置/</id>
+    <published>2019-02-22T09:42:53.656Z</published>
+    <updated>2019-02-23T04:31:22.199Z</updated>
+    
+    <content type="html"><![CDATA[<hr><p>title: MySQL配置<br>categories: 数据库</p><h2 id="tags-MySQL"><a href="#tags-MySQL" class="headerlink" title="tags: MySQL"></a>tags: MySQL</h2><h1 id="MySQL配置"><a href="#MySQL配置" class="headerlink" title="MySQL配置"></a>MySQL配置</h1><ol><li><p>下载MySQL源安装包: <code>wget http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm</code>  </p></li><li><p>安装MySQL源: <code>yum localinstall mysql57-community-release-el7-8.noarch.rpm</code></p></li><li><p>安装MySQL:  <code>yum install mysql-community-server</code>  </p></li><li><p>设置开启启动MySQL服务: <code>systemctl enable mysqld</code>  </p></li><li>启动/重启MySQL服务：systemctl restart mysqld  </li><li>查看MySQL初始密码：grep ‘A temporary password’ /var/log/mysqld.log  </li><li>更改MySQL密码：mysqladmin -u root -p’旧密码’ password ‘新密码’<br> 这里更改密码出了问题，更改失败，这是因为密码太过简单的原因。有两个接解决方法：</li></ol><p>　　　　方法一：把密码设置复杂点（这是最直接的方法）</p><p>　　　　方法二：关闭mysql密码强度验证(validate_password)</p><p>　　　　　　　　编辑配置文件：<code>vim /etc/my.cnf</code>， 增加这么一行validate_password=off</p><p>　　　　　　　　编辑后重启mysql服务：<code>systemctl restart mysqld</code>  　　　　　　　　  　　　　　　　　  </p><ol start="8"><li>设置mysql能够远程访问:<br> a. 登录进MySQL:  <code>mysql -uroot -p密码</code><br> b. 增加一个用户给予访问权限: <code>grant all privileges on *.* to &#39;root&#39;@&#39;ip地址&#39; identified by &#39;密码&#39; with grant option;</code><br> c. 刷新权限：<code>flush privileges;­</code>  </li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;hr&gt;
+&lt;p&gt;title: MySQL配置&lt;br&gt;categories: 数据库&lt;/p&gt;
+&lt;h2 id=&quot;tags-MySQL&quot;&gt;&lt;a href=&quot;#tags-MySQL&quot; class=&quot;headerlink&quot; title=&quot;tags: MySQL&quot;&gt;&lt;/a&gt;tags: MyS
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Linux指令系统</title>
