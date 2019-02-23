@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/about/index.html</loc>
+    <loc>http://yoursite.com/2019/02/22/Nginx%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85/</loc>
     
-    <lastmod>2019-02-23T07:17:34.741Z</lastmod>
+    <lastmod>2019-02-23T08:14:10.114Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/02/22/vim%E7%BC%96%E8%BE%91%E5%99%A8%E4%B9%8B%E7%A5%9E/</loc>
+    
+    <lastmod>2019-02-23T08:12:45.957Z</lastmod>
     
   </url>
   
@@ -12,20 +19,6 @@
     <loc>http://yoursite.com/2019/02/20/hello-world/</loc>
     
     <lastmod>2019-02-23T06:44:57.381Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/02/22/vim%E7%BC%96%E8%BE%91%E5%99%A8%E4%B9%8B%E7%A5%9E/</loc>
-    
-    <lastmod>2019-02-23T04:33:10.191Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2019/02/22/Nginx%E6%9C%8D%E5%8A%A1%E5%99%A8%E5%AE%89%E8%A3%85/</loc>
-    
-    <lastmod>2019-02-23T04:32:13.278Z</lastmod>
     
   </url>
   
